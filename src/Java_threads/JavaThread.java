@@ -19,7 +19,15 @@ public class JavaThread {
 
 		MyThread t2 = new MyThread();
 		t2.start();
-
+		
+		System.out.println("With Runnable.");
+		MyRunner myRunnable = new MyRunner();
+		Thread t3 = new Thread(myRunnable);
+		t3.start();
+		t3.join();
+		
+		Thread t4 = new Thread(myRunnable);
+		t4.start();
 	}
 
 }
