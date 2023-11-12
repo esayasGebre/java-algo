@@ -4,7 +4,7 @@ package Java_threads;
  * JavaThread
  * 
  */
-public class JavaThread {
+public class Driver {
 
 	public static void main(String[] args) throws InterruptedException {
 
