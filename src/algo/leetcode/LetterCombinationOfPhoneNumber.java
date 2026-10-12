@@ -41,6 +41,7 @@ private static final String[] PHONE ={"","","abc", "def", "ghi","jkl","mno","pqr
             return;
         }
 
+        // String letters = PHONE[Character.getNumericValue(digits.charAt(index))];
         String letters = PHONE[digits.charAt(index) - '0'];
         
         for (char letter : letters.toCharArray()){
